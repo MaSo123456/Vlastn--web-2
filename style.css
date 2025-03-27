@@ -4,15 +4,17 @@ body {
     justify-content: center;
     align-items: center;
 }
+body > p {
+    margin-top: 5rem;
+    font-size: 20px;
+}
 p{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
 }
 .znaky {
     display: grid;
     width: 100%;
-    margin-top: 10rem;
+    margin-top: 5rem;
 }
 .znaky > p {
     grid-column: 1 / span 2;
@@ -21,15 +23,47 @@ p{
     display: flex;
     align-items: center;
     justify-self: center;
+    justify-content: center;
     flex-direction: column;
     width: 40%;
 }
 .znaky > div > img {
     width: 100%;
 }
+.reseni {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 5rem;
+}
+.reseni > p {
+    width: 100%;
+    font-size: 20px;
+}
+.reseni > div {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+}
+.reseni > div > img {
+    width: 100%;
+}
+@media ( width > 1120px) {
+    .znaky > div {
+        width: 20rem;
+    }
 
-@media (screen > 1100px) {
-    
+    .reseni {
+        flex-direction: row;
+    }
+    .reseni > div {
+        width: 20rem; 
+    }
 
 
 }
