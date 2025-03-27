@@ -1,0 +1,35 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.znaky {
+    display: grid;
+    width: 100%;
+    margin-top: 10rem;
+}
+.znaky > p {
+    grid-column: 1 / span 2;
+} 
+.znaky >div {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    flex-direction: column;
+    width: 40%;
+}
+.znaky > div > img {
+    width: 100%;
+}
+
+@media (screen > 1100px) {
+    
+
+
+}
